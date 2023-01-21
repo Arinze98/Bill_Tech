@@ -1,0 +1,663 @@
+@font-face {
+  font-family: primary_font;
+  src: url(/fonts/arialbd.ttf);
+}
+@font-face {
+  font-family: secondary_font;
+  src: url(/fonts/arial.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container_body {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.container_body header {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: white;
+  z-index: 2;
+  background: transparent;
+}
+.container_body header .logo_fonts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container_body header .logo_fonts img {
+  width: 50px;
+  height: 35px;
+}
+.container_body header .logo_fonts .fonts .fa-solid {
+  font-size: 1.3rem;
+}
+.container_body header .nav_container {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.container_body header .nav_container ul {
+  width: 100%;
+  height: auto;
+}
+.container_body header .nav_container ul li {
+  list-style-type: none;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+.container_body header .nav_container ul li a {
+  text-decoration: none;
+  font-family: primary_font;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: black;
+}
+.container_body header .nav_container ul li a:hover {
+  color: coral;
+}
+.container_body .headerheight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+  .container_body header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container_body header .logo_fonts {
+    width: 20%;
+  }
+  .container_body header .logo_fonts .fonts {
+    display: none;
+  }
+  .container_body header .nav_container {
+    width: 50%;
+    overflow: visible;
+  }
+  .container_body header .nav_container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container_body header .nav_container ul li {
+    margin: 0 1rem;
+  }
+  .container_body header .nav_container ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+.main {
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(/hero-bcg.jpeg) center/cover no-repeat;
+  background-attachment: fixed;
+}
+.main .content_container {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+.main .content_container .content {
+  width: 80%;
+  height: 60vh;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+.main .content_container .content h1 {
+  font-family: primary_font;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+.main .content_container .content h1 span {
+  color: coral;
+}
+.main .content_container .content p {
+  margin-top: 2rem;
+  font-family: secondary_font;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+.main .content_container .content a button {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-size: 0.7em;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.one {
+  background-color: rgb(234, 234, 234);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
+  padding: 1rem 0 0 0;
+  padding-bottom: 1rem;
+}
+.one h1 {
+  text-align: center;
+  font-family: primary_font;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+}
+.one h1 span {
+  color: coral;
+}
+.one .content_container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.one .content_container .inner_container {
+  width: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 90vh;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+.one .content_container .inner_container .content {
+  width: 70%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid coral;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.one .content_container .inner_container .content .img_box {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  place-items: center;
+}
+.one .content_container .inner_container .content .img_box img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0.2rem auto;
+  border: 0.3em solid coral;
+}
+.one .content_container .inner_container .content .content_box {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.one .content_container .inner_container .content .content_box .name {
+  margin-top: 1rem;
+  font-family: primary_font;
+  font-size: medium;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  text-align: center;
+}
+.one .content_container .inner_container .content .content_box .position {
+  margin-top: 0.5rem;
+  font-family: primary_font;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.one .content_container .inner_container .content .content_box p {
+  margin-top: 0.5rem;
+  font-family: secondary_font;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+
+.two {
+  background-color: white;
+  padding: 1rem 0 0 0;
+}
+.two h1 {
+  text-align: center;
+  font-family: primary_font;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+}
+.two h1 span {
+  color: coral;
+}
+.two .testimonial_container {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.two .testimonial_container .testimonial {
+  width: 70%;
+  min-height: 40vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(234, 234, 234);
+  border-radius: 1.5rem;
+  border: 1px solid coral;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.two .testimonial_container .testimonial .name {
+  font-family: primary_font;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+.two .testimonial_container .testimonial p {
+  font-family: secondary_font;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+.two .testimonial_container .testimonial .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.two .testimonial_container .testimonial .icon .fa-solid {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.three {
+  background-color: rgb(234, 234, 234);
+  padding: 1rem 0 0 0;
+}
+.three h1 {
+  text-align: center;
+  font-family: primary_font;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+}
+.three h1 span {
+  color: coral;
+}
+.three .form_container {
+  width: 100%;
+  min-height: 90vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.three .form_container form {
+  width: 70%;
+  min-height: 40vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid coral;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: grid;
+}
+.three .form_container form h1 {
+  text-align: center;
+  font-family: primary_font;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+  padding-bottom: 1.5rem;
+}
+.three .form_container form .form_content label {
+  font-family: primary_font;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+.three .form_container form .form_content input {
+  width: 100%;
+  height: 4vh;
+  border: none;
+  background-color: rgb(234, 234, 234);
+}
+.three .form_container form .form_content input[type=email] {
+  padding: 1rem;
+}
+.three .form_container form .form_content input[type=tel] {
+  padding: 1rem;
+}
+.three .form_container form .form_content input[type=text] {
+  padding: 1rem;
+}
+.three .form_container form .form_content .password_container {
+  position: relative;
+}
+.three .form_container form .form_content .password_container .fa-solid {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  color: gray;
+  cursor: pointer;
+}
+.three .form_container form .form_content .password_container input[type=password] {
+  padding: 1rem;
+}
+.three .form_container form .form_content ::-moz-placeholder {
+  text-transform: capitalize;
+}
+.three .form_container form .form_content :-ms-input-placeholder {
+  text-transform: capitalize;
+}
+.three .form_container form .form_content ::placeholder {
+  text-transform: capitalize;
+}
+.three .form_container form .btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+.three .form_container form .btn_container button {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: coral;
+  color: white;
+  transition: 0.3s ease-in-out;
+  border: none;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.three .form_container form .btn_container button:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(26, 26, 26);
+  padding: 1em;
+}
+footer p {
+  font-family: secondary_font;
+  font-size: 0.7em;
+  color: white;
+  letter-spacing: 0.15em;
+}
+
+.to_top {
+  position: fixed;
+  top: 90%;
+  left: 85%;
+  visibility: hidden;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+}
+.to_top a {
+  text-decoration: none;
+}
+.to_top a button {
+  background-color: coral;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0.5px 0.5px 1px rgb(63, 63, 63);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.show_to_top {
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .main .content_container .content {
+    width: 40%;
+    padding: 1rem;
+  }
+  .main .content_container .content h1 {
+    font-size: 2rem;
+  }
+  .main .content_container .content p {
+    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: justify;
+  }
+  .main .content_container .content a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .main .content_container .content a button {
+    display: block;
+  }
+  .one {
+    background-color: rgb(234, 234, 234);
+  }
+  .one h1 {
+    text-align: center;
+    font-family: primary_font;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+  }
+  .one h1 span {
+    color: coral;
+  }
+  .one .content_container .inner_container .content {
+    width: 50%;
+  }
+  .one .content_container .inner_container .content .content_box p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: justify;
+  }
+  .two {
+    background-color: white;
+  }
+  .two h1 {
+    text-align: center;
+    font-family: primary_font;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+  }
+  .two h1 span {
+    color: coral;
+  }
+  .two .testimonial_container .testimonial {
+    width: 30%;
+  }
+  .two .testimonial_container .testimonial p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: justify;
+  }
+  .two .testimonial_container .testimonial .icon .fa-solid {
+    font-size: 1.5rem;
+  }
+  .three {
+    background-color: rgb(234, 234, 234);
+  }
+  .three h1 {
+    text-align: center;
+    font-family: primary_font;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+  }
+  .three h1 span {
+    color: coral;
+  }
+  .three .form_container form {
+    width: 35%;
+  }
+  .three .form_container form .btn_container button {
+    width: 20%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(26, 26, 26);
+  }
+  footer p {
+    font-family: secondary_font;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 0.15em;
+  }
+  .to_top {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+  }
+  .to_top a button {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .one {
+    padding-bottom: 0;
+  }
+  .one .content_container .inner_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    min-width: 65%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .one .content_container .inner_container .content .content_box p {
+    font-size: medium;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: justify;
+  }
+  .one .content_container .inner_container .content .content_box .name {
+    font-size: large;
+  }
+}/*# sourceMappingURL=style.css.map */

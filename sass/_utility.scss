@@ -1,0 +1,21 @@
+@mixin mobilelScreen_p_fonts {
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-align: justify;
+}
+@mixin desktopScreen_p_fonts {
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-align: justify;
+}
+@mixin mobileScreen_h1_font {
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: .1em;
+}
+@mixin desktopScreen_font2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}

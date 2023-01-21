@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Tech</title>
+    <link rel="shortcut icon" href="/image/logo/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/sass/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container_body main" id="home">
+        <header>
+            <!-- logo and fonts -->
+            <div class="logo_fonts">
+                <!-- logo  -->
+                <img src="/image/logo/logo1.png" alt="logo">
+                <!-- fonts -->
+                <div class="fonts">
+                    <!-- <i class="fa-regular fa-moon-stars"></i> -->
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <!-- nav list  -->
+            <div class="nav_container">
+                <ul>
+                    <li><a class="list" href="#home">home</a></li>
+                    <li><a class="list" href="#partners">Partners</a></li>
+                    <li><a class="list" href="#textimonials">textimonials</a></li>
+                    <li><a class="list" href="#register">register</a></li>
+                </ul>
+            </div>          
+        </header>
+        <!-- content container  -->
+        <div class="content_container">
+            <!-- content  -->
+            <div class="content">
+                <h1>first <span> project</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Animi eaque neque odio distinctio iste consequatur, est 
+                    laudantium quibusdam eum, ullam consequuntur possimus 
+                    architecto incidunt quo cumque, quidem a aliquam explicabo.
+                </p>
+                <a href="#register"><button class="register">register now</button></a>
+            </div>
+        </div>
+        
+    </section>
+    <!-- -----partners one------ -->
+    <section class="container_body one" id="partners">
+        <h1>our <span> Partners</span></h1>
+        <!-- -----content container----- -->
+        <div class="content_container" data-aos="fade-up-right">
+            <div class="inner_container">
+                <!-- ---content---- -->
+                <div class="content">
+                    <!-- img_box  -->
+                    <div class="img_box">
+                        <img src="" alt="">
+                    </div>
+                    <!-- content box -->
+                    <div class="content_box">
+                        <h2 class="name"></h2>
+                        <h2 class="position"></h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----texttimonials two------ -->
+    <section class="container_body two" id="textimonials">
+        <h1>testimonial <span> review</span></h1>
+        <!-- -----texttimonials content------- -->
+        <div class="testimonial_container" data-aos="zoom-in-left">
+            <div class="testimonial">
+                <!-- ---name---- -->
+                <h1 class="name1"></h1>
+                <!-- ---text--- -->
+                <p class="text">
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Deleniti eius pariatur excepturi 
+                    quis, in praesentium?
+                </p>
+                <!-- ----button--- -->
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------register three----- -->
+    <section class="container_body three" id="register">
+        <h1>register <span> now</span></h1>
+        <!-- ----form container-----  -->
+        <div class="form_container" data-aos="zoom-in-right">
+            <form action="" onsubmit="return validate()">
+                <!-- form  -->
+                <h1>register</h1>
+                <div class="form_content">
+                    <!-- first name  -->
+                    <label for="name"></label><br>
+                    <input type="text" id="text" placeholder="first name"><br>
+                    <!-- last name  -->
+                    <label for="name"></label><br>
+                    <input type="text" id="text2" placeholder="last name"><br>
+                    <!-- number  -->
+                    <label for="phone"></label><br>
+                    <input type="tel" id="number" placeholder="number"><br>
+                    <!-- email  -->
+                    <label for="email"></label><br>
+                    <input type="email" id="email" placeholder="Email"><br><br>
+                    <!-- password  -->
+                    <label for="password" class="password_container">
+                        <input type="password" id="password" placeholder="password">
+                        <i class="fa-solid fa-eye" id="show_password"></i>
+                    </label><br>
+                </div>
+                <!-- button  -->
+                <div class="btn_container">
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+        </div>
+    </section> 
+    <!-- -------footer------- -->
+    <footer>
+        <p>
+            copyright &copy; backroads travel tours company
+            <span id="date"></span>. all rights reserved
+        </p>
+    </footer>
+    <div class="to_top">
+        <a href="#home"><button><i class="fa-solid fa-arrow-up"></i></button></a>
+    </div>
+    <!-- ----------AOS Liibry--------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+            once: true,
+            delay: 50,
+        });
+    </script>
+    <!-- --------JS------  -->
+    <script src="/js/index.js"></script>
+</body>
+</html>

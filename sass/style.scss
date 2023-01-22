@@ -239,7 +239,7 @@ html{
                 width: 70%;
                 height: max-content;
                 background-color: $primary_color;
-                padding: 1rem;
+                padding: .7rem;
                 padding-bottom: 2rem;
                 border-radius: 1.5rem;
                 border: 1px solid $heading_color2;
@@ -263,7 +263,11 @@ html{
 
                 .content_box{
                     width: 100%;
-                    height: max-content;
+                    min-height: 15vh;
+                    height: fit-content;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
 
                     .name{
                         margin-top: 1rem;
@@ -437,10 +441,12 @@ html{
                     
                     .fa-solid{
                         position: absolute;
-                        top: 10%;
-                        left: 90%;
+                        top: 50%;
+                        left: 85%;
+                        transform: translate(-0, -50%);
                         color: gray;
                         cursor: pointer;
+                        font-size: 1rem;
                     }
                     input[type=password] {
                         padding: 1rem;
@@ -495,7 +501,7 @@ footer{
 
 .to_top{
     position: fixed;
-    top: 90%;
+    top: 88%;
     left: 85%;
     visibility: hidden;
     animation: bounce 2s ease-in-out infinite;
@@ -539,11 +545,17 @@ footer{
 
 
         .content_container{
+            align-items: flex-start;
+            padding-top: 7rem;
 
             .content{
-                width: 40%;
+                min-width: 60%;
+                height: 30vh;
                 // background-color: red;
                 padding: 1rem;
+                display: grid;
+                align-items: center;
+                justify-content: center;
 
                 h1{
                     font-size: 2rem;
@@ -624,7 +636,7 @@ footer{
         .testimonial_container{
 
             .testimonial{
-                width: 30%;
+                width: 50%;
 
                 p{
                     @include desktopScreen_p_fonts;
@@ -661,7 +673,18 @@ footer{
         .form_container{
 
             form{
-                width: 35%;
+                width: 60%;
+
+                .form_content{
+
+                    .password_container{
+
+                        .fa-solid{
+                            left: 90%;
+                        }
+                    }
+
+                }
 
                 .btn_container{
         
@@ -707,6 +730,21 @@ footer{
 
 // -------- media 1024px ------ 
 @media(min-width: 1024px) {
+    // ---------main------------ 
+    .main{
+
+        .content_container{
+            align-items: flex-start;
+            padding-top: 7rem;
+
+            .content{
+                width: 30%;
+                height: 30vh;
+                // background-color: red;
+            }
+        }
+    }
+    // -------------one------------- 
     .one{
         padding-bottom: 0;
 
@@ -735,6 +773,26 @@ footer{
                 }
 
 
+            }
+        }
+    }
+    // ------------two---------------
+    .two{
+
+        .testimonial_container{
+
+            .testimonial{
+                width: 30%;
+            }
+        }
+    }
+    // ------------three--------------
+    .three{
+
+        .form_container{
+
+            form{
+                width: 30%;
             }
         }
     }

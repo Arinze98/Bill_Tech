@@ -222,7 +222,7 @@ const eyeEl = document.getElementById('show_password')
 const passwordField = document.getElementById('password')
 
 eyeEl.addEventListener('click', function() {
-    this.classList.toggle('fa-eye-slash')
+    this.classList.toggle('fa-eye')
 
     const type  = passwordField.getAttribute('type') === 'password'? 'text' : 'password'
     passwordField.setAttribute('type', type)

@@ -133,13 +133,13 @@ html {
   font-family: secondary_font;
   color: white;
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-align: justify;
 }
 .main .content_container .content a button {
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-align: justify;
   padding: 0.5rem;
@@ -279,7 +279,7 @@ html {
   font-family: secondary_font;
   text-align: center;
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-align: justify;
 }
@@ -335,7 +335,7 @@ html {
   font-family: secondary_font;
   text-align: center;
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-align: justify;
 }
@@ -459,7 +459,7 @@ html {
   border: none;
   text-transform: capitalize;
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-align: justify;
   text-align: center;
@@ -625,7 +625,7 @@ footer p {
   .three .form_container form .btn_container button {
     width: 20%;
     font-size: 0.7rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.1em;
     text-align: justify;
     text-align: center;
